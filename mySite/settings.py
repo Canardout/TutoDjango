@@ -25,7 +25,7 @@ SECRET_KEY = '8ml)bh5b8ruzufqnx33udnoi5ukf-cf!sl^*tzmj_lft)drvwq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['canardout.pythonanywhere.com']
 
 
 # Application definition
