@@ -1,0 +1,18 @@
+html{
+  background-color: #ffff;
+
+}
+.post_container {
+
+}
+.container{
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: rgb(228, 242, 227);
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(7, 26, 38);
+}
+
+a{
+  text-decoration: none;
+}
