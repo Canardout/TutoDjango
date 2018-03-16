@@ -3,7 +3,10 @@ html{
 
 }
 .post_container {
-
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
 }
 .container{
   font-family: 'Gloria Hallelujah', cursive;
@@ -15,4 +18,26 @@ html{
 
 a{
   text-decoration: none;
+}
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+
+.comment.unapproved{
+  color: rgb(152, 156, 154);
+}
+
+nav {
+  margin-bottom: 20px;
+  border-bottom: solid 2px #c3d4c2;
+  padding-bottom: 5px;
+}
+
+.top-menu{
+  display: inline-block;
+}
+
+.button-menu{
+  padding: 5px;
 }

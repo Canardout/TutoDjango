@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
   </head>
   <body class="content container">
+    <nav>
+      {% if user.is_authenticated %}
+        <p class="top-menu">Hello {{ user.username }} <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
+        <a class="btn btn-default pull-right" href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        <a class="btn btn-default pull-right" href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+
+      {% else %}
+        <a href="{% url 'login' %}" class=" btn btn-default">Connexion <span class="glyphicon glyphicon-lock"></span></a>
+      {% endif %}
+    </nav>
     {% block content %}
     {% endblock %}
   </body>
